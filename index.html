@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junviso - Questionário</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Supertire tem novidade fresquinha!</h1>
+    <p>Responda as perguntas abaixo e conheça a nova feature do Supertire!</p>
+    <form id="questionarioForm">
+      <p>1. O cliente chega na oficina alegando que o carro está fazendo um barulho estranho. O que o mecânico faz primeiro para não esquecer de nada?</p>
+      <label>
+        <div class="wrong-option" id="option1">
+          <input type="radio" name="pergunta1" value="errado1" class="errado"> Chuta o pneu.
+        </div>
+      </label><br>
+      <label>
+        <input type="radio" name="pergunta1" value="certo1"> Abre um Checklist de Entrada para padronizar a revisão.
+      </label>
+
+      <p>2. Como garantimos que o carro não saia da oficina com um parafuso a menos?</p>
+      <label>
+        <div class="wrong-option" id="option2">
+          <input type="radio" name="pergunta2" value="errado2" class="errado"> Rezando.
+        </div>
+      </label><br>
+      <label>
+        <input type="radio" name="pergunta2" value="certo2"> Com uma Lista de Verificação de Saída obrigatória.
+      </label>
+
+      <p>3. Qual é a melhor forma de passar confiança e profissionalismo para o dono do carro?</p>
+      <label>
+        <div class="wrong-option" id="option3">
+          <input type="radio" name="pergunta3" value="errado3" class="errado"> Mostrar um papel sujo de graxa.
+        </div>
+      </label><br>
+      <label>
+        <input type="radio" name="pergunta3" value="certo3"> Utilizando o sistema Supertire para controle total do auto/truck center!
+      </label>
+
+      <button type="button" onclick="verificarRespostas()">Nova feature do Supertire, vem ver!</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
